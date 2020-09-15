@@ -1,16 +1,18 @@
 import com.sun.deploy.util.StringUtils;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class StringUtilTest {
 
     //Estos son test sin JUnit
-    public static void main(String[] args){
+    @Test
+    public void testRepeat(){
 
-        assertEquals(StringUtil.repeat("hola", 3), "holaholahola");
+        //Con JUnit esta función existe por defecto y el orden es inverso (expected, actual)
+        Assert.assertEquals("holahola", StringUtil.repeat("hola", 3));
 
-        String result2 = StringUtil.repeat("hola", 1);
-        if (!result2.equals("hola")){
-            throw new RuntimeException("ERROR");
-        }
+        //Sin JUnit uso la función creada anteriormente
+        assertEquals(StringUtil.repeat("hola", 1), "hola");
 
     }
 

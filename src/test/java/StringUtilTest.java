@@ -1,23 +1,25 @@
-import com.sun.deploy.util.StringUtils;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class StringUtilTest {
 
-    //Estos son test sin JUnit
-    public static void main(String[] args){
-
-        assertEquals(StringUtil.repeat("hola", 3), "holaholahola");
-
-        String result2 = StringUtil.repeat("hola", 1);
-        if (!result2.equals("hola")){
-            throw new RuntimeException("ERROR");
-        }
-
+    @Test
+    public void repeat_string_once(){
+        Assert.assertEquals("hola", StringUtil.repeat("hola", 1));
     }
 
-    private static void assertEquals(String actual, String expected) {
-        if (!actual.equals(expected)){
-            throw new RuntimeException(actual + " isn't equal to expected " + expected);
-        }
+    @Test
+    public void repeat_string_multiple_times(){
+        Assert.assertEquals("holaholahola", StringUtil.repeat("hola", 3));
     }
 
+    @Test
+    public void repeat_string_zero_times(){
+        Assert.assertEquals("", StringUtil.repeat("hola", 0));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void repeat_string_negative_times(){
+        StringUtil.repeat("hola", -1);
+    }
 }

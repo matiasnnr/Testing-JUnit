@@ -1,3 +1,5 @@
+package utils;
+
 public class StringUtil {
 
     public static String repeat(String str, int times) {
@@ -13,5 +15,9 @@ public class StringUtil {
         }
 
         return result;
+    }
+
+    public static boolean isEmpty(String str){
+        return str == null || str.trim().length() == 0;
     }
 }

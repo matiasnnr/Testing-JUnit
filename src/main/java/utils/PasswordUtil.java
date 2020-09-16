@@ -1,3 +1,5 @@
+package utils;
+
 public class PasswordUtil {
 
     public enum SecutiryLevel {

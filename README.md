@@ -4,18 +4,18 @@
 
 #### Beneficios:
 
-•	Comprobar los requerimientos de nuestra aplicación.
-•	Documentación y ejemplos de nuestras clases.
-•	Mediante Test Driven Development (TDD) nos puede ayudar en el diseño de clases.
-•	Confianza al desarrollar.
-•	Confianza para refactorizar nuestro código.
-•	Es una habilidad que se solicita cada vez más en el mercado.
+-	Comprobar los requerimientos de nuestra aplicación.
+-	Documentación y ejemplos de nuestras clases.
+-	Mediante Test Driven Development (TDD) nos puede ayudar en el diseño de clases.
+-	Confianza al desarrollar.
+-	Confianza para refactorizar nuestro código.
+-	Es una habilidad que se solicita cada vez más en el mercado.
 
 Existen test automáticos y manuales, los automáticos van a requerir tiempo de desarrollo y algunas veces no serán tan viables, pero de ser posible siempre trata de hacer test automáticos ya que:
 
-•	Son más rápidos.
-•	Son más fiables.
-•	Son incrementales.
+-	Son más rápidos.
+-	Son más fiables.
+-	Son incrementales.
 
 #### Tipos de test que usamos:
 
